@@ -54,7 +54,7 @@ export function renderFeaturedListings(container, featuredListings) {
                 <div class="product">
                   <div class="product-image">
                     <img src="${
-                      media[0] ?? "../../../../images/defaultimage.jpeg"
+                      media[0] ?? "../../../../dist/images/defaultimage.jpeg"
                     }" alt="${title}" class="w-100" />
                   </div>
                   <div class="product-info p-4">

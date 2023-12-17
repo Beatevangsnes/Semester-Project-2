@@ -3,7 +3,6 @@ import { authFetch } from "../headers.mjs";
 
 const action = "/listings";
 
-/* Gets all listings */
 export async function getListings() {
   const getListingsURL = `${BASE_API}${action}?_active=true&_seller=true`;
   const response = await authFetch(getListingsURL);
@@ -11,7 +10,6 @@ export async function getListings() {
   return await response.json();
 }
 
-/* Gets one listing */
 export async function getListing(id) {
   if (!id) {
     throw new Error("Listing-ID required to get listing");

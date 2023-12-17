@@ -1,5 +1,4 @@
 import { getListing, updateListing } from "../../api/listings/index.mjs";
-import { convertTags } from "../tags.mjs";
 import { getParam } from "../../api/utils/tools.mjs";
 
 export async function setUpdateListingFormListener() {
@@ -8,7 +7,7 @@ export async function setUpdateListingFormListener() {
   const currentMediaContainer = document.querySelector("#currentMedia");
   const mediaInputsContainer = document.querySelector("#mediaInputs");
   const addMoreButton = document.querySelector("#addMoreBtn");
-  let listing; // Declare listing here to have broader scope
+  let listing;
 
   if (form && id) {
     const button = form.querySelector("#updateBtn");
@@ -62,7 +61,7 @@ export async function setUpdateListingFormListener() {
       const formData = new FormData(event.target);
       const newMedia = formData
         .getAll("media[]")
-        .filter((url) => url.trim() !== ""); // Filter out empty strings
+        .filter((url) => url.trim() !== "");
 
       const combinedMedia =
         listing && listing.media ? [...listing.media, ...newMedia] : newMedia;

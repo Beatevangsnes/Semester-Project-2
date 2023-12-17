@@ -25,7 +25,7 @@ function displayProfileData(profile) {
           <div class="profile-image avatar online">
             <div class="w-80 mask mask-hexagon">
               <img id="avatarImage" src="${
-                avatar ? avatar : "/images/user2.png"
+                avatar ? avatar : "/dist/images/user2.png"
               }" alt="${name}" class="w-100 profile-image"/>
             </div>
           </div>

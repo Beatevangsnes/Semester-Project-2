@@ -18,7 +18,7 @@ export async function viewSingleListing() {
 
 function createSellerInfoHTML(seller) {
   const { name, email, avatar } = seller;
-  const avatarSrc = avatar ? avatar : "/images/user2.png";
+  const avatarSrc = avatar ? avatar : "/dist/images/user2.png";
   return `
       <div class="seller-info">
           <img src="${avatarSrc}" alt="${name}" class="rounded-full" 

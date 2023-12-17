@@ -38,7 +38,8 @@ export function renderProfileListings(container, listings) {
                     <div class="product">
                         <div class="product-image">
                             <img src="${
-                              media[0] ?? "../../../../images/defaultimage.jpg"
+                              media[0] ??
+                              "../../../../dist/images/defaultimage.jpg"
                             }" alt="${title}" class="w-100"/>
                         </div>
                         <div class="product-info p-4">

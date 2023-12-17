@@ -11,9 +11,8 @@ export default function router() {
   switch (path) {
     case "/":
     case "/index.html":
-      checkAuth(); // Keep checking auth, but don't prevent the code below from executing
+      checkAuth();
       welcome();
-      // Display featured listings regardless of authentication status
       templates.displayFeaturedListings();
 
       listeners.setLogoutListener();

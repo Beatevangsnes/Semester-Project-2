@@ -24,7 +24,7 @@ export const bidHistory = (() => {
       .map((bid) => {
         const { bidderName, amount, created } = bid;
         const bidDate = new Date(created).toLocaleString();
-        const defaultAvatarSrc = "/images/user2.png";
+        const defaultAvatarSrc = "/dist/images/user2.png";
 
         return `
           <div class="chat chat-start">

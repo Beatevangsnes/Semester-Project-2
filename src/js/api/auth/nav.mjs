@@ -7,7 +7,7 @@ export async function checkAuth() {
   if (token != null) {
     try {
       const userProfile = await getProfile();
-      const avatarURL = userProfile.avatar || "/images/user2.png"; // Use default image if avatar is not available
+      const avatarURL = userProfile.avatar || "/dist/images/user2.png";
 
       navMenu.innerHTML = `
       <div class="navbar">

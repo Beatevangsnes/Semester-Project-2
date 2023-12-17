@@ -1,7 +1,7 @@
 // carouselTemplate.mjs
 export function createCarousel(media) {
   if (!media || media.length === 0) {
-    media = ["/images/defaultimage.jpeg"]; // Default image if no media
+    media = ["/dist/images/defaultimage.jpeg"]; // Default image if no media
   }
 
   // Generating carousel items

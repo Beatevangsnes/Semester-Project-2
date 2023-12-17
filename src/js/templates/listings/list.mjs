@@ -53,7 +53,7 @@ export function renderListings(container, listings) {
           <div class="product">
             <div class="product-image">
               <img src="${
-                media[0] ?? "../../../../images/defaultimage.jpeg"
+                media[0] ?? "../../../../dist/images/defaultimage.jpeg"
               }" alt="${truncatedTitle}" class="w-100"/>
             </div>
             <div class="product-info p-4">
