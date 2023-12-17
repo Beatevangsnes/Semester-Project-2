@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/dist/css/home.css" />
+    <link rel="stylesheet" href="/dist/css/layout.css" />
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+  </head>
+  <body>
+    <header class="nav-menu"></header>
+    <hero>
+      <div class="hero relative" style="background-image: url(/images/heroimg3.png)">
+        <div class="hero-overlay bg-opacity-30 absolute inset-0"></div>
+        <div class="hero-content inset-0 flex items-center justify-center">
+          <div class="max-w-md text-white text-center">
+            <h1 class="mb-5 text-5xl">Welcome to The Auction House</h1>
+            <h2 class="mb-5">Buy or Sell anything online </h2>
+            <div class="action-button">
+              <a href="/listings/index.html" class="">View Listings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </hero>
+    <main class="container mx-auto p-4">
+      <div class="homepage-text"></div>
+      <div class="featured-listings">
+            <div class="text-center mb-8"><h1>Featured Listings</h1></div>
+            <hr>
+              <div class="listings" id="featured">
+                  <div class="loader"></div>
+              </div>
+              <div class="view-more text-center">
+                  <a class="view-more-button mx-auto" href="/listings/index.html">View More Listings</a>
+              </div>
+    </main>
+    <section class="about-section  bg-base-200">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <h1 class="mb-4  text-gray-900 dark:text-white">The Auction House</h1>
+              <p class="mb-4">Welcome to "The Auction House," your go-to online auction platform! Dive into a world where buying and selling are effortlessly interconnected. At our auction house, users can showcase items for bidding and participate in the thrill of bidding on a diverse range of listings.</p>
+              <p class="mb-4">New users kick off their journey with a generous 1000 credits, which can be earned by selling items and spent on acquiring coveted treasures through the bidding process. While non-registered users can explore our listings, the real excitement begins when you register, unlocking the ability to actively engage in bids.</p>
+              <p>"The Auction House" is where transactions come to life, creating a vibrant marketplace for users to connect and trade. Join us today, and let the bidding adventures unfold!</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+              <img class="w-full rounded-lg" src="/images/auctionimg.webp" alt="auction image">
+              <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/images/auctionimg2.webp" alt="auction image">
+          </div>
+      </div>
+  </section>
+  <footer class="footer p-10 bg-base-200 text-base-content">
+    
+    <nav>
+      <header class="footer-title">&copy; 2023 The Auction House. All rights reserved. </header>
+    </nav>
+    <nav>
+      <header class="footer-title">Links</header>
+      <a class="link link-hover">Listings</a>
+      <a class="link link-hover">Log In</a>
+      <a class="link link-hover">Register</a>
+    </nav>
+    <nav>
+      <header class="footer-title">Social</header>
+      <a class="link link-hover">Facebook</a>
+      <a class="link link-hover">Instagram</a>
+      <a class="link link-hover">Twitter</a>
+    </nav>
+    <form>
+      <header class="footer-title">Newsletter</header>
+      <fieldset class="form-control">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="username@site.com"
+            class="input input-bordered join-item"
+          />
+          <button class="btn btn-primary join-item">Subscribe</button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View your own profile on WeBuy here" />
+    <title>Auction Website | Register</title>
+    <link rel="stylesheet" href="/dist/css/register.css" />
+    <link rel="stylesheet" href="/dist/css/layout.css" />
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="/main.mjs" type="module" defer></script>
+  </head>
+  <body>
+    <header class="nav-menu"></header>
+    <main class="container mx-auto p-4">
+      <div class="register-form md-80">
+        <div class="text-center"><h1>Register</h1></div>
+        <form class="mt-6" id="registerForm">
+          <div class="mb-4">
+            <label for="registerName">Name</label>
+            <input
+              required
+              id="registerName"
+              name="name"
+              type="text"
+              maxlength="20"
+              pattern="^[\w]+$"
+              placeholder="Username"
+              title="Username can only contain lowercase and uppercase letters, numbers and underscore. Example: My_Username123"
+              class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="registerEmail">Email address</label>
+            <input
+              required
+              id="registerEmail"
+              type="email"
+              name="email"
+              pattern="[\w\-.]+@(stud.)?noroff.no$"
+              title="Only Noroff student or staff emails are valid."
+              placeholder="Example@stud.noroff.no"
+              class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="registerPassword">Password</label>
+            <input
+              required
+              id="registerPassword"
+              type="password"
+              name="password"
+              minlength="8"
+              placeholder="************"
+              class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="registerAvatar">Avatar URL</label>
+            <input
+              required
+              id="registerAvatar"
+              type="url"
+              name="avatar"
+              placeholder="Avatar URL"
+              class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            />
+          </div>
+          <div class="register-button">
+            <button
+              class="mt-1 bg-white bg-opacity-30 hover:bg-opacity-40 transition duration-500 rounded-md shadow-md shadow-slate-600/70 p-3 w-full font-semibold"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </div>
+          <div class="text-center mx-4 pt-4">or</div>
+        </form>
+        <div class="text-center pt-4 text-sm">
+          <p>Already have an account?</p>
+        </div>
+        <div class="login-link text-center pt-4 text-sm mb-4">
+          <a href="/profile/login">Log in</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <header class="footer-title">
+          &copy; 2023 The Auction House. All rights reserved.
+        </header>
+      </nav>
+      <nav>
+        <header class="footer-title">Links</header>
+        <a class="link link-hover">Listings</a>
+        <a class="link link-hover">Log In</a>
+        <a class="link link-hover">Register</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Social</header>
+        <a class="link link-hover">Facebook</a>
+        <a class="link link-hover">Instagram</a>
+        <a class="link link-hover">Twitter</a>
+      </nav>
+      <form>
+        <header class="footer-title">Newsletter</header>
+        <fieldset class="form-control">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>

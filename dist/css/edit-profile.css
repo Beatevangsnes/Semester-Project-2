@@ -1,0 +1,24 @@
+.update-button button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.update-button button {
+  flex: 1 1 auto;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  max-width: 300px;
+  display: block;
+ }
+
+ .update-button {
+  margin-top: 40px;
+  margin-bottom: 100px;
+ }
+

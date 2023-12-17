@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'sf-pro';
+  src: url('/dist/fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+  font-family: 'sf-pro-light';
+  src: url('/dist/fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+  font-family: 'sf-pro-medium';
+  src: url('/dist/fonts/SF-Pro-Display-Medium.otf');
+}
+
+@font-face {
+  font-family: 'sf-pro-bold';
+  src: url('/dist/fonts/SF-Pro-Display-Bold.otf');
+}
+
+
+body {
+  background-image: url(/images/background.png);
+  background-attachment: fixed;
+  font-family: "sf-pro", sans-serif;
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;  
+}
+
+
+
+.hero h1 {
+  font-family: "sf-pro-bold", sans-serif;
+}
+
+.hero h2 {
+  font-family: "sf-pro-medium", sans-serif;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+
+.hero {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+
+main {
+  color: black;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: 160px;
+}
+
+.navbar {
+  background: rgba(22, 22, 23, 0.8);
+  color: white;
+  font-size: 16px;
+  font-family: "sf-pro-medium", sans-serif;
+}
+
+.nav-link.active a {
+  text-decoration: underline;
+  color: aquamarine;
+}
+
+
+.navbar a {
+  font-size: 16px;
+  font-family: "sf-pro-light", sans-serif;
+}
+
+
+.dropdown a {
+  color: white;
+}
+
+.join button {
+  color: black;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+

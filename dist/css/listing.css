@@ -1,0 +1,210 @@
+
+.hidden {
+  display: none;
+}
+
+.card-body {
+  min-width: 320px;
+}
+
+.card-body h1 {
+font-size: 24px;
+letter-spacing: 2px;
+}
+
+
+.listing-info-container {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light white border */
+  background: rgba(84, 85, 83, 0.2);
+  backdrop-filter: blur(10px); /* Blurred background */
+  padding: 0px; /* Space inside the container */
+  margin: 20px auto;
+  max-width: 850px; 
+}
+
+
+.listing-text h5 {
+font-weight: bold;
+}
+
+.add-bid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.addBid label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.addBid input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.bids-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bids-history h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 40px;
+}
+
+.listing-price p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.created-info {
+  margin-top: 40px;
+}
+
+.seller-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.seller-info h2 {
+  font-size: 20px;
+}
+
+.seller-info p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.back-button {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.add-bid-button button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.add-bid-button button {
+  flex: 1 1 auto;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  max-width: 300px;
+  display: block;
+ }
+
+ .add-bid-button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }
+
+.edit-button {
+  flex: 1 1 auto;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  border-color: none;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  max-width: 200px;
+  display: block;
+  margin-bottom: 60px;
+}
+
+
+.edit-button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.edit-button a {
+  color: black;
+}
+
+.created-info p {
+  color: gray;
+}
+
+.listing-info {
+  max-width: 100%; /* Set a maximum width as needed */
+  word-wrap: break-word; /* or overflow-wrap: break-word; */
+}
+
+.listing-text h1 {
+  margin-bottom: 40px;
+  font-family: "sf-pro-medium", sans-serif;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.end-date {
+  margin-bottom: 10px;
+}
+
+.listing-price {
+  margin-bottom: 20px;
+}
+
+.listing-info-container h3 {
+  font-size: 18px;
+  font-family: "sf-pro-medium", sans-serif;
+}
+
+.bids-history h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .listing-carousel {
+    max-width: 320px;
+  }
+  .carousel {
+    max-width: 320px; /* Set the max-width to 320px when the screen is 500px or less */
+  }
+
+  .carousel-item {
+    max-width: fit-content;
+  }
+
+  .carousel img {
+    max-width: 320px; /* Corrected value with the unit (px) */
+    width: 100%; /* Ensure the image scales within the parent container */ 
+  }
+}

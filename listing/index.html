@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to WeBuy here" />
+    <title>Auction Website | Listings</title>
+    <link rel="stylesheet" href="/dist/main.css" />
+    <link rel="stylesheet" href="/dist/css/layout.css" />
+    <link rel="stylesheet" href="/dist/css/listing.css" />
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-menu"></header>
+    <main>
+      <div class="container mx-auto p-4">
+        <div class="listing" id="listing">Loading...</div>
+        <div class="text-center" id="edit-button"></div>
+      </div>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <header class="footer-title">
+          &copy; 2023 The Auction House. All rights reserved.
+        </header>
+      </nav>
+      <nav>
+        <header class="footer-title">Links</header>
+        <a class="link link-hover">Listings</a>
+        <a class="link link-hover">Log In</a>
+        <a class="link link-hover">Register</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Social</header>
+        <a class="link link-hover">Facebook</a>
+        <a class="link link-hover">Instagram</a>
+        <a class="link link-hover">Twitter</a>
+      </nav>
+      <form>
+        <header class="footer-title">Newsletter</header>
+        <fieldset class="form-control">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to WeBuy here" />
+    <title>Auction Website | Log in</title>
+    <link rel="stylesheet" href="/dist/css/login.css" />
+    <link rel="stylesheet" href="/dist/css/layout.css" />
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js" defer></script>
+  </head>
+
+  <body>
+    <header class="nav-menu"></header>
+    <main class="container mx-auto p-4">
+      <div class="login-form md-80">
+        <div class="text-center"><h1>Log In</h1></div>
+          <form class="mt-6" id="loginForm">
+            <div class="mb-4">
+              <label for="email-address-icon" class="block mb-2"> Email </label>
+              <input
+                required
+                id="loginEmail"
+                name="email"
+                type="email"
+                placeholder="Email@stud.noroff.no"
+                pattern="[\w\-.]+@(stud.)?noroff.no$"
+                title="Only Noroff student or staff emails are valid."
+                class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword"> Password </label>
+              <input
+                name="password"
+                required
+                id="loginPassword"
+                type="password"
+                minlength="8"
+                placeholder="************"
+                class="form-control block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              />
+            </div>
+            <div class="login-button">
+              <button
+              class="mt-1 bg-white bg-opacity-30 hover:bg-opacity-40 transition duration-500 rounded-md shadow-md shadow-slate-600/70 p-3 w-full font-semibold"
+              type="submit"
+            >
+              Sign in
+            </button>
+            </div>
+            <div class="text-center mx-4 pt-4">or</div>
+          </form>
+          <div class="text-center pt-4 text-sm">
+            <p>Don’t have an account yet?</p>
+          </div>
+          <div class="register-link text-center pt-4 text-sm mb-4">
+            <a href="/profile/register">Register</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <header class="footer-title">&copy; 2023 The Auction House. All rights reserved. </header>
+      </nav>
+      <nav>
+        <header class="footer-title">Links</header>
+        <a class="link link-hover">Listings</a>
+        <a class="link link-hover">Log In</a>
+        <a class="link link-hover">Register</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Social</header>
+        <a class="link link-hover">Facebook</a>
+        <a class="link link-hover">Instagram</a>
+        <a class="link link-hover">Twitter</a>
+      </nav>
+      <form>
+        <header class="footer-title">Newsletter</header>
+        <fieldset class="form-control">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
