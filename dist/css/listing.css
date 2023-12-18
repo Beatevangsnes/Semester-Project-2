@@ -9,16 +9,19 @@ letter-spacing: 2px;
 
 
 .listing-info-container {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light white border */
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
   background: rgba(84, 85, 83, 0.2);
-  backdrop-filter: blur(10px); /* Blurred background */
-  padding: 0px; /* Space inside the container */
+  backdrop-filter: blur(10px); 
+  padding: 0px; 
   margin: 20px auto;
   max-width: 850px; 
 }
 
+#edit-button {
+  margin-top: 60px;
+}
 
 .listing-text h5 {
 font-weight: bold;
@@ -63,7 +66,7 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
   margin-bottom: 40px;
 }
 
@@ -100,7 +103,7 @@ font-weight: bold;
 }
 
 .add-bid-button button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .add-bid-button button {
@@ -142,7 +145,7 @@ font-weight: bold;
 
 
 .edit-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .edit-button a {
@@ -154,8 +157,8 @@ font-weight: bold;
 }
 
 .listing-info {
-  max-width: 100%; /* Set a maximum width as needed */
-  word-wrap: break-word; /* or overflow-wrap: break-word; */
+  max-width: 100%; 
+  word-wrap: break-word; 
 }
 
 .listing-text h1 {
@@ -191,7 +194,7 @@ font-weight: bold;
     max-width: 320px;
   }
   .carousel {
-    max-width: 320px; /* Set the max-width to 320px when the screen is 500px or less */
+    max-width: 320px; 
   }
 
   .carousel-item {
@@ -199,7 +202,7 @@ font-weight: bold;
   }
 
   .carousel img {
-    max-width: 320px; /* Corrected value with the unit (px) */
-    width: 100%; /* Ensure the image scales within the parent container */ 
+    max-width: 320px; 
+    width: 100%; 
   }
 }

@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Add some space between cards */
+  gap: 20px; 
 }
 
 .card-body {
@@ -29,10 +29,10 @@
   border-radius: 20px;
   backdrop-filter: blur(10px);
   overflow: hidden;
-  width: 100%; /* Take full width of the container */
+  width: 100%; 
   width: 340px;
   height: 500px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth transition */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
 
 .card-body:hover {
@@ -49,7 +49,7 @@
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Use cover for product images */
+  object-fit: cover; 
   object-position: center;
 }
 
@@ -93,7 +93,7 @@
 
 
 .view-more-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 
@@ -117,13 +117,13 @@
 
 
 .action-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .action-button a {
-  display: block; /* Make the anchor element block-level */
-  text-decoration: none; /* Remove underline, if any */
-  color: inherit; /* Inherit color from the parent */
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
 
@@ -146,13 +146,13 @@
 
 
 .login-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .login-button a {
-  display: block; /* Make the anchor element block-level */
-  text-decoration: none; /* Remove underline, if any */
-  color: inherit; /* Inherit color from the parent */
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .register-button {
@@ -174,13 +174,13 @@
 
 
 .register-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .register-button a {
-  display: block; /* Make the anchor element block-level */
-  text-decoration: none; /* Remove underline, if any */
-  color: inherit; /* Inherit color from the parent */
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .homepage-buttons {

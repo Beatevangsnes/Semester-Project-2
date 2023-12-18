@@ -1,17 +1,17 @@
 .register-form {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Light white border */
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
   background: rgba(84, 85, 83, 0.2);
-  backdrop-filter: blur(10px); /* Blurred background */
-  padding: 20px; /* Space inside the container */
+  backdrop-filter: blur(10px); 
+  padding: 20px; 
   margin: 100px auto;
   max-width: 600px; 
 }
 
 
 .register-button button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .register-button button {

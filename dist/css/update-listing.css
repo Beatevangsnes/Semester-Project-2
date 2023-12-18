@@ -1,10 +1,10 @@
 .update-listing-form {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light white border */
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
   background: rgba(84, 85, 83, 0.2);
-  backdrop-filter: blur(10px); /* Blurred background */
-  padding: 20px; /* Space inside the container */
+  backdrop-filter: blur(10px); 
+  padding: 20px; 
   margin: 20px auto;
   max-width: 600px; 
 }
@@ -12,7 +12,7 @@
 
 
 .update-button button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .update-button button {
@@ -33,7 +33,7 @@
 
 
 .add-button button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .add-button button {
@@ -44,8 +44,7 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: black;
- /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
- background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   max-width: 300px;
@@ -59,7 +58,7 @@
 
 
 .delete-button button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
 }
 
 .delete-button button {
