@@ -4,7 +4,7 @@
   "description": "Semester project 2",
   "main": "index.mjs",
   "scripts": {
-    "build:tailwind": "npx tailwindcss build /dist/css/main.css -o /dist/css/output.css",
+    "build:tailwind": "npx tailwindcss build -i ./dist/css/main.css -o ./dist/css/output.css",
     "start": "npm run build && live-server"
   },
   "repository": {

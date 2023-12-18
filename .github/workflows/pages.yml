@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies
         run: npm i
       - name: Build Tailwind CSS
-        run: npx tailwindcss build /dist/css/main.css -o /dist/css/output.css
+        run: npm run build:tailwind
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
