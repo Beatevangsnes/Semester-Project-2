@@ -28,7 +28,6 @@ export async function setUpdateProfileFormListener() {
       profile.name = name;
       profile.email = email;
 
-      //semd it to the API
       updateAvatar(profile.avatar);
       console.log(profile);
     });

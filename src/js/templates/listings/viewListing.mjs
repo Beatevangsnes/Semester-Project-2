@@ -1,4 +1,3 @@
-// viewListing.mjs
 import { getListing } from "../../api/listings/index.mjs";
 import { getParam } from "../../api/utils/tools.mjs";
 import { createCarousel } from "./carouselTemplate.mjs";

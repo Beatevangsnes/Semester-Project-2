@@ -1,4 +1,3 @@
-// Assuming the file name is editProfile.mjs
 import { getProfile } from "../../api/profiles/read.mjs";
 import { updateAvatar } from "../../api/profiles/update.mjs";
 
@@ -6,10 +5,9 @@ async function loadProfileData() {
   try {
     const userProfile = await getProfile();
     displayProfileData(userProfile);
-    setupAvatarUpdateListener(); // Call setupAvatarUpdateListener after loading profile data
+    setupAvatarUpdateListener();
   } catch (error) {
     console.error("Error loading profile:", error);
-    // Handle loading error
   }
 }
 
@@ -47,7 +45,6 @@ function setupAvatarUpdateListener() {
     try {
       const updatedProfile = await updateAvatar(avatarUrl);
 
-      // Assuming that your updateAvatar API call returns the updated profile
       document.getElementById("avatarImage").src = updatedProfile.avatar;
     } catch (error) {
       console.error("Failed to update avatar:", error);

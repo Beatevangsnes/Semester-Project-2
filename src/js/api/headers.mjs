@@ -1,7 +1,5 @@
 import { load } from "../storage/index.mjs";
 
-/* Returns the correct header*/
-
 export default function headers(hasBody = false) {
   const headers = {};
 

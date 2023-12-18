@@ -1,6 +1,5 @@
 import { BASE_API } from "../constants.mjs";
 import { authFetch } from "../headers.mjs";
-import { getParam } from "../utils/tools.mjs";
 
 const action = "/listings";
 const method = "delete";

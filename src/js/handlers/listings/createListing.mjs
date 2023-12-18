@@ -1,5 +1,3 @@
-// listings/createListings.mjs
-
 import { createListing } from "../../api/listings/create.mjs";
 
 export function setCreateListingFormListener() {
@@ -12,7 +10,7 @@ export function setCreateListingFormListener() {
       const formData = new FormData(event.target);
       const mediaValues = formData.getAll("media[]");
       const listing = Object.fromEntries(formData.entries());
-      listing.media = mediaValues; // Ensure media is an array
+      listing.media = mediaValues;
 
       createListing(listing);
     });

@@ -1,5 +1,3 @@
-// router.mjs
-
 import * as listeners from "./handlers/index.mjs";
 import * as templates from "./templates/index.mjs";
 import { checkAuth } from "./api/index.mjs";
@@ -80,6 +78,5 @@ export default function router() {
       break;
 
     default:
-    // Handle other cases or paths
   }
 }

@@ -1,4 +1,3 @@
-import { displayListings } from "../../../templates/listings/list.mjs";
 import { renderListings } from "../../../templates/listings/list.mjs";
 
 export function setupSearch(listings, container) {

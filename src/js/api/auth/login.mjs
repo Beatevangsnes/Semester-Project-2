@@ -20,9 +20,10 @@ export async function login(profile) {
 
   if (response.ok) {
     storage.save("token", accessToken);
-
     storage.save("profile", user);
-
     window.location.replace("/profile/");
+  } else {
+    alert("Wrong email or password. Please try again.");
+    console.error("Wrong password or email.");
   }
 }

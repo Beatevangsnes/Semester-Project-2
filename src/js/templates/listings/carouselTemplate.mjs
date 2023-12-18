@@ -1,10 +1,8 @@
-// carouselTemplate.mjs
 export function createCarousel(media) {
   if (!media || media.length === 0) {
-    media = ["/dist/images/defaultimage.jpeg"]; // Default image if no media
+    media = ["/dist/images/defaultimage.jpeg"];
   }
 
-  // Generating carousel items
   let carouselItems = media
     .map(
       (imgSrc, index) => `
@@ -15,7 +13,6 @@ export function createCarousel(media) {
     )
     .join("");
 
-  // Generating navigation buttons
   let navigationButtons = media
     .map(
       (_, index) => `
@@ -26,7 +23,6 @@ export function createCarousel(media) {
     )
     .join("");
 
-  // Carousel container and navigation
   return `
     <div class="carousel w-full">
       ${carouselItems}

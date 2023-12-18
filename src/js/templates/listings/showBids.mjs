@@ -1,4 +1,3 @@
-// showBids.mjs
 export const bidHistory = (() => {
   const uniqueBidIds = new Set();
 

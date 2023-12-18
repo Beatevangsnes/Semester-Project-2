@@ -14,7 +14,7 @@ export async function setUpdateListingFormListener() {
     button.disabled = true;
 
     try {
-      listing = await getListing(id); // Assign value to listing
+      listing = await getListing(id);
       if (listing) {
         form.title.value = listing.title || "";
         form.description.value = listing.description || "";

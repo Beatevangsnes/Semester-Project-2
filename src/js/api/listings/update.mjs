@@ -14,7 +14,7 @@ export async function updateListing(listingData) {
   const response = await authFetch(updateListingURL, {
     method,
     headers: {
-      "Content-Type": "application/json", // Ensure correct content type
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(listingData),
   });
